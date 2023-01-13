@@ -34,7 +34,7 @@ body{
 }
 .hero-inf{
   height: 450px;
-  background: url(/images/Rectangle\ 3.png);
+  background: url(./images/Rectangle\ 3.png);
   background-size: 810px 468px;
   background-repeat: no-repeat;
   background-position: 100%;
