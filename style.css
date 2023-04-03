@@ -5,7 +5,7 @@
   font-size: 48px;
   border: none;
   line-height: 100%;
-  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 h1,h2,h3{
   font-weight: 700;
@@ -16,33 +16,40 @@ a{
 }
 p a:hover{
   background-color: rgba(0, 0, 0, 0.158);
+  font-size: 50px;
 }
 li{
   list-style: none;
 }
-div{
-  border-radius: 43px;
+ul{
+  padding: 0;
+  width: 100%;
 }
+
 body{
-  background: url(./images/Forest.jpg);
+  background: linear-gradient(0deg, #496C5E 0%, rgba(73, 108, 94, 0) 3.68%), linear-gradient(180deg, #496C5E 0%, rgba(0, 0, 0, 0) 3.65%), url(./images/Rectangle\ 8.png);
   background-attachment: fixed;
   background-size: 100% 100%;
   width: 100%;
+}
+.inf-item button.container{
+  border-radius: 43px;
 }
 .container{
   padding: 15px 54px;
 }
 .hero-inf{
   height: 450px;
-  background: url(./images/Rectangle\ 3.png);
-  background-size: 810px 468px;
+  background: url(./images/Rectangle\ 4.png);
+  background-size: 800px 450px;
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: 99.2%;
   padding-left: 20px;
   padding-top: 13px;
 }
 .inf{
   background-color: rgba(217, 217, 217, 0.5);
+  border-radius: 43px;
 }
 .hero-img{
   position: absolute;
@@ -56,14 +63,14 @@ body{
   letter-spacing: -0.065em;
 }
 .inf-inf{
-  padding: 50px;
+  padding-top: 25px;
 }
 .inf-title{
   font-size: 64px;
   text-align: center;
 }
 .inf-list{
-  margin-top: 70px;
+  margin-top: 50px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -74,9 +81,10 @@ body{
   margin-right: auto;
   text-align: center;
 }
-.inf-item-container{
+.inf-item .container{
   box-shadow: inset 0px -1px 4px 5px rgba(0, 0, 0, 0.25);
   background: rgba(217, 217, 217, 0.01);
+  height: 252px;
   width: 663px;
   padding: 20px 0;
 }
@@ -89,13 +97,48 @@ body{
   margin-top: 25px;
   font-weight: 700;
 }
-.inf-button:hover{
+button:hover{
   box-shadow: inset 0px -1px 7px 7px rgba(0, 0, 0, 0.25);
+  transform: scale(1.01, 1);
 }
-.inf-item-text{
+.inf-item .text{
   font-weight: 400;
   margin-top: 20px;
   width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+.backdrop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.244);
+  backdrop-filter: blur(25px);
+  z-index: 10;
+}
+.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.backdrop.hidden .modal{
+  transform: scale(1, 0);
+}
+.modal{
+  padding: 50px;
+}
+.modal li{
+  margin-top: 50px;
+}
+.modal p{
+  text-align: left;
+}
+input{
+  text-align: center;
+  margin-top: 10px;
+  width: 663px;
 }
