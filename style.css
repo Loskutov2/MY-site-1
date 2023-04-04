@@ -88,6 +88,9 @@ body{
   width: 663px;
   padding: 20px 0;
 }
+button{
+  box-shadow: inset 0px -1px 4px 5px rgba(0, 0, 0, 0.25);
+}
 .inf-button{
   border-radius: 43px;
   background: rgba(217, 217, 217, 0.01);
@@ -98,6 +101,10 @@ body{
   font-weight: 700;
 }
 button:hover{
+  box-shadow: inset 0px -1px 7px 7px rgba(0, 0, 0, 0.25);
+  transform: scale(1.01, 1);
+}
+.cock:hover{
   box-shadow: inset 0px -1px 7px 7px rgba(0, 0, 0, 0.25);
   transform: scale(1.01, 1);
 }
